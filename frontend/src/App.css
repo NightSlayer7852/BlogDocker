@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+.primary-btn {
+    background: #8125eb;
+    color: white;
+    margin-bottom: 1rem;
+    height: 35px;
+}
+
+.submit-btn {
+    background: #16a34a;
+    color: white;
+    width : 10%;
+    height: 35px;
+}
+
+.delete-btn {
+    background: #dc2626;
+    color: white;
+    
+    height: px;
+}
+
+.like-btn {
+    background: #334155;
+    color: white;
+}
+
+.dislike-btn {
+    background: #475569;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Form */
+.form-container {
+    background: #020617;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background: #020617;
+    color: white;
+    width: 95%;
+}
+
+textarea {
+    min-height: 90px;
+}
+
+/* Blog List */
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.2rem;
+}
+
+/* Blog Card */
+.post-item {
+    background: #020617;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+    transition: transform 0.12s ease,
+        box-shadow 0.12s ease;
+}
+
+.post-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+}
+
+.post-item.expanded {
+    border: 1px solid #334155;
+}
+
+/* Header */
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-header h2 {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* Content */
+.post-content {
+    margin: 0.4rem 0 0.6rem;
+    line-height: 1.45;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.post-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.4rem;
+}
+
+/* Info */
+.info {
+    color: #94a3b8;
+}
+
+.error {
+    color: #f87171;
+}

@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: blog_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - sqlite_data:/app/db
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: blog_frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  sqlite_data:
